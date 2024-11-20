@@ -11,7 +11,19 @@ import Contact from './pages/contact.jsx';
 import MyProfile from './pages/MyProfile.jsx';
 import MyAppointments from './pages/MyAppointments.jsx';
 import Appointment from './pages/Appointment.jsx';
+import Navbar from './components/Navbar.jsx';
+
+const Layout = () => {
+  return (
+    <div>
+      <Navbar />
+    </div>
+  );
+};
 const router = createBrowserRouter([
+  {
+    element:<Layout />,
+    children:[
   {
     path : "/",
     element : <Home />
@@ -48,11 +60,13 @@ const router = createBrowserRouter([
   {
     path : "/appointment/:docId",
     element : <Appointment />
-  }
-  ])
+  },
+],
+},
+]);
 const App = () => {
   return (
-    <div>
+    <div className='mx-4 sm:mx-[10%]'>
       <RouterProvider router={router} />
     </div>
   )
