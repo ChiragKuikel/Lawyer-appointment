@@ -13,12 +13,14 @@ import MyProfile from './pages/MyProfile.jsx';
 import MyAppointments from './pages/MyAppointments.jsx';
 import Appointment from './pages/Appointment.jsx';
 import Navbar from './components/Navbar.jsx';
+import Footer from './components/footer.jsx';
 
 const Layout = () => {
   return (
     <div>
       <Navbar />
       <Outlet />
+      <Footer />
     </div>
   );
 };
@@ -71,6 +73,8 @@ const App = () => {
     <div className='mx-4 sm:mx-[10%]'>
       <RouterProvider router={router} />
     </div>
+    
+    
   )
 }
 
