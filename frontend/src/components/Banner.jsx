@@ -10,7 +10,7 @@ const Banner = () => {
         {/*------LeftSide-------*/}
         <div className='text-xl sm:text-2xl md:text-3xl lg:text-5xl font-semibold text-white'>
             <p>Book Appointment</p>
-            <p>With 100+ trusted doctors</p>
+            <p>With 100+ trusted lawyers</p>
         </div>
         <button className='bg-white text-sm sm:text-base text-gray-600 px-8 py-3 rounded-full mt-6 hover:scale-105 transition-all' onClick={()=>{Navigate('/login');scrollTo(0,0)}}>Create account</button>
     </div>

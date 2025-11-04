@@ -3,15 +3,15 @@ import { useNavigate } from 'react-router-dom'
 import { AppContext } from '../Context/AppContext';
 const Topdoctors = () => {
   const navigate = useNavigate();
-  const {doctors} = useContext(AppContext);
+  const {lawyers} = useContext(AppContext);
   return (
     <div className='flex flex-col items-center gap-4 my-16 text-gray-900 md:mx-10'>
-        <h1 className='text-3xl font-medium'>Top Doctors to Book</h1>
-        <p className=' sm:w-1/3 text-center text-sm'>Simply browse through the extensive list of doctors</p>
+        <h1 className='text-3xl font-medium'>Top Lawyers to Book</h1>
+        <p className=' sm:w-1/3 text-center text-sm'>Simply browse through the extensive list of lawyers</p>
         <div className='w-full grid grid-cols-auto gap-4 pt-5 gap-y-6 px-3 sm:px-0'>
-            {doctors.slice(0,10).map((item,index)=>(
+            {lawyers.slice(0,10).map((item,index)=>(
                 <div onClick={()=>navigate(`/appointment/${item._id}`)} key={index} className='border border-blue-200 rounded-xl overflow-hidden cursor-pointer hover:translate-y-[-10px] transition-all duration-500'>
-                <img className='bg-blue-50 ' src={item.image} alt=' ' / >
+                <img className='bg-[#BEDDCF] object-cover h-72' src={item.image} alt=' '  loading="lazy"/>
                 <div className='p-4'>
                 <div className='flex items-center gap-2 text-sm text-center text-green-500'>
                 <p className='w-2 h-2 bg-green-500 rounded-full'></p><p>Available</p>

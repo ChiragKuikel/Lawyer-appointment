@@ -2,7 +2,14 @@ import React from 'react'
 
 const MyAppointments = () => {
   return (
-    <div>MyAppointments</div>
+    <div className='flex'>
+      <div>
+        Hello
+      </div>
+      <div>
+        Hello fuck
+      </div>
+    </div>
   )
 }
 
