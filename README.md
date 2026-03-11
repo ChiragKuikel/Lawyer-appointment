@@ -3,27 +3,6 @@ Lawyer Booking Platform ⚖️
 A modern web application for booking appointments with lawyers, built with React.js and Tailwind CSS. This platform connects clients with experienced lawyers across various legal specialities.
 
 
-Table of Contents
-Features
-
-Tech Stack
-
-Project Structure
-
-Installation
-
-Usage
-
-Pages Overview
-
-Booking Flow
-
-Screenshots
-
-Contributing
-
-License
-
  Features
 For Clients
 Browse Lawyers - View all available lawyers with detailed profiles
@@ -40,6 +19,7 @@ User Profile - Manage personal information and preferences
 
 Real-time Availability - Check lawyer availability with preferred time slots
 
+
 For Platform
 Responsive Design - Fully optimized for mobile, tablet, and desktop
 
@@ -48,6 +28,7 @@ Mock Data System - Simulated backend with localStorage persistence
 Interactive UI - Smooth animations and transitions
 
 Authentication Simulation - Login/signup functionality with local storage
+
 
 Tech Stack
 Frontend Framework: React.js 18
@@ -64,41 +45,7 @@ Storage: Browser localStorage
 
 Build Tool: Vite (assumed)
 
-Project Structure
-text
-lawyer-booking-platform/
-├── public/
-│   └── index.html
-├── src/
-│   ├── assets/
-│   │   ├── assets.js
-│   │   └── [image files]
-│   ├── components/
-│   │   ├── Navbar.jsx
-│   │   ├── footer.jsx
-│   │   ├── Header.jsx
-│   │   ├── SpecialityMenu.jsx
-│   │   ├── toplawyers.jsx
-│   │   └── Banner.jsx
-│   ├── Context/
-│   │   └── AppContext.jsx
-│   ├── pages/
-│   │   ├── home.jsx
-│   │   ├── lawyers.jsx
-│   │   ├── docters.jsx
-│   │   ├── Login.jsx
-│   │   ├── about.jsx
-│   │   ├── contact.jsx
-│   │   ├── MyProfile.jsx
-│   │   ├── MyAppointments.jsx
-│   │   └── Appointment.jsx
-│   ├── App.jsx
-│   ├── main.jsx
-│   └── index.css
-├── .gitignore
-├── package.json
-├── README.md
-└── tailwind.config.js
+
 
 Usage
 Browse Lawyers: Navigate to the Lawyers page to see all available lawyers
@@ -112,6 +59,8 @@ Book Appointment: Select a date and time slot, then provide your details
 Manage Appointments: View all your appointments in "My Appointments"
 
 Update Profile: Edit your personal information in "My Profile"
+
+
 
 Pages Overview
 Home Page
@@ -173,6 +122,8 @@ Signup page
 Form validation
 
 Simulated authentication
+
+
 
 Booking Flow
 Select Lawyer → Browse or search for a lawyer
